@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Akmal Ranyan.</title>
+    <link rel="icon"  href="images/woi.ico">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/110c64d119.js" crossorigin="anonymous"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+
+<body>
+
+
+    <nav class="bg-white border-gray-200 px-2 sm:px-4 py-2.5 rounded  w-full z-20">
+        <div class="container flex flex-wrap items-center justify-between mx-auto">
+            <a href="https://flowbite.com/" class="flex items-center">
+                <span class="self-center text-xl font-semibold whitespace-nowrap"><span
+                        class="text-blue-700">Akmal</span> Ranyan.</span>
+            </a>
+            <button data-collapse-toggle="navbar-default" type="button"
+                class="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200"
+                aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                        clip-rule="evenodd"></path>
+                </svg>
+            </button>
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+                <ul
+                    class="flex flex-col p-4 mt-4 border border-gray-100 rounded-lg bg-gray-50 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0 md:bg-white">
+                    <li>
+                        <a href="#home"
+                            class="block py-2 pl-3 pr-4 text-gray-700  rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 "
+                            aria-current="page">Home</a>
+                    </li>
+                    <li>
+                        <a href="#personal"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0  ">Personal</a>
+                    </li>
+                    <li>
+                        <a href="#skills"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0   ">Skills</a>
+                    </li>
+                    <li>
+                        <a href="#projects"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0   ">Projects</a>
+                    </li>
+                    <li>
+                        <a href="#activities"
+                            class="block py-2 pl-3 pr-4 text-gray-700 rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0   ">Activities</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section id="home" class="home">
+
+        <div class="flex lg:flex-row flex-col-reverse  mt-[150px]">
+            <div class="mt-5">
+                <h1 class="ml-10 text-5xl font-semibold"><span class="text-blue-700">Akmal</span> Faiq</h1>
+                <h1 class="ml-10 text-5xl font-semibold">Muhammad Ranyan</h1>
+                <p class="ml-10 text-slate-500">Meet Akmal, a guy who love to <mark>code</mark>, and have a big
+                    <mark>curiosity</mark> 🙌</p>
+
+                <figure class="mx-auto max-w-screen-md lg:ml-10 ml-6 mt-6">
+                    <blockquote>
+                        <p class="text-xl italic font-medium text-gray-900 underline">"He is good, we appreciate him for
+                            his hard work, we hope he got a position in apple."</p>
+                    </blockquote>
+                    <figcaption class="flex ml-10 mt-6 space-x-3">
+                        <img class="w-6 h-6 rounded-full"
+                            src="data:image/jpeg;base64,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"
+                            alt="profile picture">
+                        <div class="divide-x-2 divide-gray-500 dark:divide-gray-700">
+                            <cite class="pr-3 font-medium text-gray-900">Tim Cook</cite>
+                            <cite class="pl-3 text-sm font-light text-gray-500 dark:text-gray-400">CEO at Apple</cite>
+
+                        </div>
+                    </figcaption>
+                </figure>
+                <button  type="button"
+                    class="text-white bg-blue-600 hover:bg-blue-900  transition-all duration-200 focus:ring-4 focus:outline-none focus:ring-slate-800  font-medium rounded-lg text-sm px-[19px] py-2.5 text-center mr-2 mb-2 ml-10 mt-10"><a href="#personal">More
+                    About Me</a></button>
+            </div>
+            <div class="mb-[50px] ml-20 mr-20 sm:w-[500px] lg:w-[720px]">
+                <img src="images/callmeifyougetlostid.png" alt="" width="720px">
+            </div>
+
+        </div>
+    </section>
+
+    <section class="mt-[200px]" id="personal">
+        <div class="flex lg:flex-row flex-col justify-evenly">
+            <div class="" data-aos="fade-right">
+                <h1 class="lg:ml-[80px] ml-[30px] md:ml-[100px] lg:text-5xl font-semibold mt-20 sm:text-lg">Personal Bio</h1>
+                <p class="lg:ml-[80px] ml-[30px] md:ml-[100px] mt-6 lg:text-xl text-gray-500 sm:text-lg">Im a developer from Surabaya, East Java
+                </p>
+                <p class="lg:ml-[80px] ml-[30px] md:ml-[100px] lg:text-xl text-gray-500 sm:text-lg">I love to read and playing sports, especially
+                    football</p>
+                <p class="lg:ml-[80px] ml-[30px] md:ml-[100px] lg:text-xl text-gray-500 sm:text-lg">I study at IDN Boarding School, Bogor, West
+                    Java
+                </p>
+                <p class="lg:ml-[80px] ml-[30px] md:ml-[100px] lg:text-xl text-gray-500 sm:text-lg">I hope I can be a fullstack developer one day
+                </p>
+            </div>
+            <div class="">
+
+                <div href="#"
+                    class="block max-w-sm p-6 bg-blue-600 border border-gray-200 rounded-lg shadow-md hover:bg-blue-900 transition-all duration-300 h-[450px] lg:w-[900px]  sm:w-[300px] lg:ml-[70px] md:ml-[100px]  mt-[60px] " data-aos="fade-left">
+                    <h5 class="mb-6 text-2xl font-bold tracking-tight text-white">Social</h5>
+                    <div class="flex flex-col">
+                        <a href="https://www.instagram.com/akmalranyan/" class="text-white"><i
+                                class="fa-brands fa-instagram fa-2xl pt-10 mr-2"></i>akmalranyan</a>
+                        <a href="https://github.com/akmalranyan" class="text-white"><i
+                                class="fa-brands fa-github fa-2xl pt-10 mr-2"></i>akmalranyan</a>
+                        <a href="https://www.linkedin.com/in/akmal-ranyan/" class="text-white"><i class="fa-brands fa-linkedin fa-2xl pt-10 mr-2"></i>Akmal
+                            Ranyan</a>
+                        <a href="https://medium.com/@akmalranyan" class="text-white"><i class="fa-brands fa-medium fa-xl pt-10 mr-2"></i>Akmal
+                            Ranyan</a>
+                        <a href="" class="text-white"><i class="fa-brands fa-twitter fa-2xl pt-10 mr-2"></i>*******</a>
+                    </div>
+                    <div class="">
+                        <h2 class="mt-6 font-semibold text-md text-white">Or Contact:</h2>
+                        <p class="font-semibold underline text-white">+621575049549</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="mt-[200px]"  data-aos="fade-up">
+            <h1 class="text-3xl font-bold text-center">Have worked in various companies</h1>
+        </div>
+        <div class="flex justify-evenly mx-5 mt-10 flex-wrap"  data-aos="fade-up">
+            <div class="h-[150px] w-[300px] bg-slate-200 rounded-md m-[20px]"><i
+                    class="fa-brands fa-apple fa-2xl ml-[105px] md:ml-[130px] lg:ml-[130px] mt-[75px]"></i></div>
+            <div class="h-[150px] w-[300px] bg-slate-200 rounded-md m-[20px]"><i
+                    class="fa-brands fa-google fa-2xl ml-[100px] md:ml-[130px] lg:ml-[135px] mt-[75px]"></i></div>
+            <div class="h-[150px] w-[300px] bg-slate-200 rounded-md m-[20px]"><i
+                    class="fa-brands fa-aws fa-2xl ml-[100px] md:ml-[130px] lg:ml-[125px] mt-[75px]"></i></div>
+            <div class="h-[150px] w-[300px] bg-slate-200 rounded-md m-[20px]"><i
+                    class="fa-brands fa-twitter fa-2xl ml-[100px] md:ml-[130px] lg:ml-[140px] mt-[75px]"></i></div>
+            <div class="h-[150px] w-[300px] bg-slate-200 rounded-md m-[20px]"><i
+                    class="fa-brands fa-playstation fa-2xl ml-[100px] md:ml-[130px] lg:ml-[130px] mt-[75px]"></i></div>
+            <div class="h-[150px] w-[300px] bg-slate-200 rounded-md m-[20px]"><i
+                    class="fa-brands fa-spotify fa-2xl ml-[100px] md:ml-[130px] lg:ml-[140px] mt-[75px]"></i></div>
+            <div class="h-[150px] w-[300px] bg-slate-200 rounded-md m-[20px]"><i
+                    class="fa-brands fa-twitch fa-2xl ml-[100px] md:ml-[130px] lg:ml-[140px] mt-[75px]"></i></div>
+            <div class="h-[150px] w-[300px] bg-slate-200 rounded-md m-[20px]"><i
+                    class="fa-brands fa-lyft fa-2xl ml-[100px] md:ml-[130px] lg:ml-[140px] mt-[75px]"></i></div>
+        </div>
+
+        <h1 class="text-3xl font-bold text-center mt-[170px]">Timeline</h1>
+
+        <ol class="relative border-l border-gray-200 mt-[140px] lg:ml-[100px] ml-[30px] z-10">
+            <div class="" data-aos="fade-up">
+            <li class="mb-10 ml-6">
+                <span
+                    class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-900 rounded-full ring-8 ring-gray-300">
+                    <i class="fa-brands fa-android" style="color: white;"></i>
+                </span>
+                <h3 class="flex items-center mb-1 text-lg font-semibold text-gray-900 ml-4">Android Developer At Lyft
+                </h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 ml-4">January
+                    13th,
+                    2020 - January 13th, 2021</time>
+                <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400 ml-4">Contributing on their
+                    mega-project</p>
+            </li>
+        </div>
+        <div class="" data-aos="fade-up">
+            <li class="mb-10 ml-6">
+                <span
+                    class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-900 rounded-full ring-8  ring-gray-300">
+                    <i class="fa-brands fa-android" style="color: white;"></i>
+
+                </span>
+                <h3 class="mb-1 text-lg font-semibold text-gray-900 ml-4">Android Developer At Twitch</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 ml-4">
+                    December 7th, 2021 - December 7th, 2022</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400 ml-4">Contributing on their
+                    mega-project
+                </p>
+            </li>
+        </div>
+        <div class="" data-aos="fade-up">
+            <li class="mb-10 ml-6">
+                <span
+                    class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-900 rounded-full ring-8  ring-gray-300">
+                    <i class="fa-brands fa-swift" style="color: white;"></i>
+                </span>
+                <h3 class="mb-1 text-lg font-semibold text-gray-900 ml-4">IOS Developer At Spotify</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 ml-4">
+                    December 2nd, 2023 - December 2nd, 2024</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400 ml-4">Contributing on their
+                    mega-project</p>
+            </li>
+            </div>
+            <div class="" data-aos="fade-up">
+            <li class="mb-10 ml-6">
+                <span
+                    class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-900 rounded-full ring-8  ring-gray-300">
+                    <i class="fa-brands fa-css3-alt" style="color: white;"></i>
+                </span>
+                <h3 class="mb-1 text-lg font-semibold text-gray-900 ml-4">Front-End Developer at PlayStation</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 ml-4">
+                    December 2nd, 2023 - December 2nd, 2024</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400 ml-4">Contributing on their
+                    mega-project</p>
+            </li>
+            </div>
+            <div class="" data-aos="fade-up">
+            <li class="mb-10 ml-6">
+                <span
+                    class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-900 rounded-full ring-8  ring-gray-300">
+                    <i class="fa-brands fa-css3-alt" style="color: white;"></i>
+                </span>
+                <h3 class="mb-1 text-lg font-semibold text-gray-900 ml-4">Front-End Developer at Twitter</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 ml-4">
+                    December 2nd, 2024 - December 2nd, 2025</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400 ml-4">Contributing on their
+                    mega-project</p>
+            </li>
+            </div>
+            <div class="" data-aos="fade-up">
+            <li class="mb-10 ml-6">
+                <span
+                    class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-900 rounded-full ring-8  ring-gray-300">
+                    <i class="fa-solid fa-server" style="color: white;"></i>
+                </span>
+                <h3 class="mb-1 text-lg font-semibold text-gray-900 ml-4">Network Engineer at Amazon Web Service</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 ml-4">
+                    December 2nd, 2025 - December 2nd, 2026</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400 ml-4">Contributing on their
+                    mega-project</p>
+            </li>
+            </div>
+            <div class="" data-aos="fade-up">
+            <li class="mb-10 ml-6">
+                <span
+                    class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-900 rounded-full ring-8  ring-gray-300">
+                    <i class="fa-solid fa-code" style="color: white;"></i>
+                </span>
+                <h3 class="mb-1 text-lg font-semibold text-gray-900 ml-4">Fullstack Developer at Google</h3>
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 ml-4">
+                    December 2nd, 2026 - December 2nd, 2027</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400 ml-4">Contributing on their
+                    mega-project</p>
+            </li>
+            </div>
+            <div class="" data-aos="fade-up">
+            <li class="ml-6">
+                <span class="flex absolute -left-3 justify-center items-center w-6 h-6 bg-blue-900 rounded-full ring-8">
+                    <i class="fa-brands fa-swift" style="color: white;"></i>
+                </span>
+                <h3 class="lg:flex mb-1 text-lg font-semibold text-gray-900 ml-4">IOS Developer at Apple
+                    <span
+                        class="bg-blue-100 text-blue-800 text-sm font-medium mr-2 px-2.5 py-0.5 rounded  ml-3">Now</span>
+                </h3>
+
+                <time class="block mb-2 text-sm font-normal leading-none text-gray-400 dark:text-gray-500 ml-4">
+                    December 2nd, 2023 - December 2nd, 2024</time>
+                <p class="text-base font-normal text-gray-500 dark:text-gray-400 ml-4">Contributing on their
+                    mega-project</p>
+            </li>
+            </div>
+        </ol>
+
+        <div class="flex justify-evenly flex-wrap  mt-[200px]" >
+            <div class="mx-10 bg-slate-100 p-10 rounded-lg w-[600px] mt-10 lg:mt-0" data-aos="fade-right">
+                <h4 class="text-2xl font-bold">What do I do?</h4>
+                <p class="text-xl mt-10 text-slate-500">I Code, and also design things, I started to code from 15, I'm open for all offer that may come</p>
+            </div>
+            <div class="mx-10 bg-slate-100 p-10 rounded-lg w-[600px] mt-10 lg:mt-0" data-aos="fade-left">
+                <h4 class="text-2xl font-bold">Experiences</h4>
+                <p class="text-xl mt-10 text-slate-500">I'm still learning, but I've got some certificates and projects. I hope I can contribute more in my next project</p>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="skills" class="skill mt-[250px]">
+        <div class="" data-aos="fade-up">
+            <h2 class="text-3xl font-bold text-center">My Skills</h2>
+        </div>
+
+        <div class="flex flex-row flex-wrap justify-evenly" data-aos="fade-up">
+            <div
+                class="max-w-sm p-6 bg-blue-600 border border-gray-200 rounded-lg shadow-md mt-20 mx-6 hover:bg-blue-900 transition-all duration-300">
+                <i class="fa-brands fa-html5" style="color: white;"></i>
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white ">HTML</h5>
+                </a>
+                <p class="mb-3 font-normal text-slate-300 ">I've made many projects with HTML, I use HTML5 for it.</p>
+            </div>
+            <div
+                class="max-w-sm p-6 bg-blue-600 border border-gray-200 rounded-lg shadow-md mt-20 mx-6 hover:bg-blue-900 transition-all duration-300">
+                <i class="fa-brands fa-css3" style="color: white;"></i>
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white ">CSS</h5>
+                </a>
+                <p class="mb-3 font-normal text-slate-300 ">I also made my web projects with CSS, I use CSS3 and CSS
+                    frameworks, such as Bootstrap and Tailwind.</p>
+            </div>
+            <div
+                class="max-w-sm p-6 bg-blue-600 border border-gray-200 rounded-lg shadow-md mt-20 mx-6 hover:bg-blue-900 transition-all duration-300">
+                <i class="fa-brands fa-bootstrap" style="color: white;"></i>
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white ">Bootstrap</h5>
+                </a>
+                <p class="mb-3 font-normal text-slate-300 ">I use Bootstrap 5, and also other framework like Tailwind.
+                </p>
+            </div>
+            <div
+                class="max-w-sm p-6 bg-blue-600 border border-gray-200 rounded-lg shadow-md mt-20 mx-6 hover:bg-blue-900 transition-all duration-300">
+                <i class="fa-brands fa-php" style="color: white;"></i>
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white ">PHP</h5>
+                </a>
+                <p class="mb-3 font-normal text-slate-300 ">I recently learn some about Hypertext Preprocessor (PHP),
+                    I've made a couple CRUD project using it.</p>
+            </div>
+            <div
+                class="max-w-sm p-6 bg-blue-600 border border-gray-200 rounded-lg shadow-md mt-20 mx-6 hover:bg-blue-900 transition-all duration-300">
+                <i class="fa-solid fa-database" style="color: white;"></i>
+                <a href="#">
+                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white ">MySQL</h5>
+                </a>
+                <p class="mb-3 font-normal text-slate-300 ">I've made many databases and tables, some of them created
+                    with the Query.</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="projects" class="projects mt-[250px]">
+        <div class="flex flex-row justify-center"  data-aos="fade-up">
+            <span><i class="fa-solid fa-clock-rotate-left fa-xl mr-3"></i></span>
+            <h5 class="font-bold text-3xl">My Recent Projects</h5>
+        </div>
+        <div class="flex flex-wrap justify-evenly mt-20"  data-aos="fade-up">
+
+            <div
+                class="max-w-sm bg-white p-2 border border-gray-200 rounded-lg shadow-md  m-10 hover:scale-110 transition-all duration-300" >
+                <a href="#">
+                    <img class="rounded-lg" src="images/Screenshot 2022-11-24 at 11.28.44.png" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">Sistem
+                            Informasi Sekolah IDN Boarding School</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-slate-500">I made this with Bootstrap 5 and PHP, I use CRUD and
+                        connect this file to mySql database</p>
+                    <a
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-slate-200 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 mt-[26px]">
+                        Website
+                    </a>
+                </div>
+            </div>
+            <div
+                class="max-w-sm bg-white p-2 border border-gray-200 rounded-lg shadow-md  m-10 hover:scale-110 transition-all duration-300">
+                <a href="#">
+                    <img class="rounded-lg" src="images/Screenshot 2022-11-28 at 10.35.48.png" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">IDN Shop and IDN Shoes</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-slate-500">I made this e-commerce website with Tailwindcss, this web also got the Rest-API, so you can fill the form that I made, and got your form answer on a website card. This web also provide the dark-mode</p>
+                    <a
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-slate-200 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 mt-[60px]">
+                        Website
+                    </a>
+                </div>
+            </div>
+            <div
+                class="max-w-sm bg-white p-2 border border-gray-200 rounded-lg shadow-md  m-10 hover:scale-110 transition-all duration-300">
+                <a href="#">
+                    <img class="rounded-lg" src="images/Screenshot 2022-11-24 at 11.31.18.png" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">Rental Car
+                            Database</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-slate-500">I made this in mySql using Queries, each table must be related</p>
+                    <a
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-slate-200 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 mt-[40px]">
+                        Database
+                    </a>
+                </div>
+            </div>
+            <div
+                class="max-w-sm bg-white p-2 border border-gray-200 rounded-lg shadow-md  m-10 hover:scale-110 transition-all duration-300">
+                <a href="#">
+                    <img class="rounded-lg" src="images/Screenshot 2022-11-24 at 11.18.24.png" alt="" />
+                </a>
+                <div class="p-5">
+                    <a href="#">
+                        <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 ">
+                            16personalities clone</h5>
+                    </a>
+                    <p class="mb-3 font-normal text-slate-500">Static website, made with Tailwindcss</p>
+                    <a
+                        class="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-slate-200 bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 mt-[65px]">
+                        Website
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section>
+        <div class=""  data-aos="fade-up">
+        <h4 class="font-bold text-3xl text-center mt-[100px]">Project Statistics</h4>
+        </div>
+        <div class=""  data-aos="fade-right">
+        <div class="ml-[50px] mt-[20px]">
+            <div class="mb-1 text-base font-medium "><span class="mr-5"><i
+                        class="fa-solid fa-laptop-code"></i></span>Website Project</div>
+            <div class="w-[50%] bg-gray-200 rounded-full h-2.5 mb-4 transition-width duration-300">
+                <div class="bg-blue-600 h-2.5 rounded-full " style="width: 80%"></div>
+            </div>
+        </div>
+        <div class="ml-[50px] mt-[40px]">
+            <div class="mb-1 text-base font-medium "><span class="mr-5"><i
+                        class="fa-solid fa-database"></i></span>Database</div>
+            <div class="w-[50%] bg-gray-200 rounded-full h-2.5 mb-4 ">
+                <div class="bg-blue-600 h-2.5 rounded-full " style="width: 20%"></div>
+            </div>
+        </div>
+        <div class="ml-[50px] mt-[40px]">
+            <div class="mb-1 text-base font-medium "><span class="mr-5"><i
+                        class="fa-brands fa-android"></i></span>Android Project</div>
+            <div class="w-[50%] bg-gray-200 rounded-full h-2.5 mb-4 ">
+                <div class="bg-blue-600 h-2.5 rounded-full " style="width: 0%"></div>
+            </div>
+        </div>
+        <div class="ml-[50px] mt-[40px]">
+            <div class="mb-1 text-base font-medium "><span class="mr-5"><i class="fa-brands fa-apple"></i></span>IOS
+                Project</div>
+            <div class="w-[50%] bg-gray-200 rounded-full h-2.5 mb-4 ">
+                <div class="bg-blue-600 h-2.5 rounded-full " style="width: 0%"></div>
+            </div>
+        </div>
+        </div>
+
+        <div class="">
+            <h4 class="text-xl font-semibold lg:ml-12 lg:text-left text-center mt-[100px] " data-aos="fade-right">Summary</h4>
+        </div>
+        <div class="flex lg:flex-row flex-col lg:ml-12 ml-[40px] md:ml-[100px]  mt-10 flex-wrap" data-aos="fade-right">
+            <div class="h-[150px] w-[300px] bg-slate-100 shadow-md rounded-l-md">
+                <i class="fa-sharp fa-solid fa-laptop-file ml-10 mt-10" style="color: rgb(84, 84, 236);"></i><span
+                    class="text-l font-medium mt-10 ml-2 text-blue-400">Total Projects</span>
+                <h5 class="text-2xl font-bold mt-3 ml-10">10 Projects</h5>
+            </div>
+            <div class="h-[150px] w-[300px] bg-slate-100 shadow-md ">
+                <i class="fa-solid fa-certificate ml-10 mt-10" style="color: rgb(84, 84, 236);"></i><span
+                    class="text-l font-medium mt-10 ml-2 text-blue-400">Certificates</span>
+                <h5 class="text-2xl font-bold mt-3 ml-10">6 Certified</h5>
+            </div>
+            <div class="h-[150px] w-[300px] bg-slate-100 shadow-md rounded-r-md ">
+                <i class="fa-solid fa-chalkboard-user ml-10 mt-10" style="color: rgb(84, 84, 236);"></i><span
+                    class="text-l font-medium mt-10 ml-2 text-blue-400">Teaching</span>
+                <h5 class="text-2xl font-bold mt-3 ml-10">4 Times</h5>
+            </div>
+        </div>
+
+    </section>
+  <section style="height: 500vh;" id="activities"> 
+        <div class="mt-[300px]" data-aos="fade-up">
+            <h4 class="text-4xl font-bold text-center">Activities</h4>
+        </div>
+        <div class="flex lg:flex-row flex-col lg:mt-[300px] mt-[100px] lg:ml-[100px]" data-aos="fade-up">
+            <div class="lg:w-[1000px] w-auto">
+                <img class="rounded-lg lg:w-[70%] w-[30%] lg:ml-0 ml-[10px]"
+                    src="images/IMG_20221025_153543.jpg" alt="" height="70%" width="70%">
+            </div>
+            <div class="lg:mr-[100px] mr-[5px] mb-4 p-4 leading-normal">
+                <h5 class="lg:text-4xl text-md font-bold tracking-tight text-gray-900 ">IDN Teaching at Al-Andalus</h5>
+                <p class="mb-3 font-normal text-gray-500 lg:text-xl text-sm">This is my first teaching experience, i've been teaching
+                    there for two times. My material was about HTML and CSS, with portfolio project in the end of the
+                    material.</p>
+                    <p class="text-blue-500 lg:text-md text-sm"><span><i class="fa-solid fa-medal" style="color: rgb(84, 84, 236);"></i></span>Benefits</p>
+                    <ul class="ml-6">
+                        <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>New Connection and friends</li>
+                        <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>New Experience</li>
+                        <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>More understand material that we teach</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="flex lg:flex-row flex-col lg:mt-[200px] mt-[100px] lg:ml-[100px]" data-aos="fade-up">
+            <div class="lg:w-[1000px] w-auto">
+                <img class="rounded-lg lg:w-[70%] w-[30%] lg:ml-0 ml-[10px]"
+                    src="images/20221106_072323973.jpg" alt="" height="70%" width="65%">
+            </div>
+            <div class="flex flex-col mb-4 p-4 leading-normal mr-[20px] lg:mr-[300px]">
+                <h5 class=" lg:text-4xl text-md font-bold tracking-tight text-gray-900 ">Mission Impossible</h5>
+                <p class="mb-3 font-normal text-gray-500 lg:text-xl text-sm">This is a survival event, we have to sell out stuff to keep survive. I sell all of my things and earned Rp.104.000.</p>
+                <p class="text-blue-500 lg:text-md text-sm"><span><i class="fa-solid fa-medal" style="color: rgb(84, 84, 236);"></i></span>Benefits</p>
+                    <ul class="ml-6">
+                        <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>Teamwork and chemistry for each other increased</li>
+                        <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>New Experience</li>
+                        <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>Speaking skill and marketing skill increased</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="flex lg:flex-row flex-col lg:mt-[200px] mt-[100px] lg:ml-[100px]" data-aos="fade-up">
+            <div class="lg:w-[1000px] w-auto">
+                <img class="rounded-lg lg:w-[70%] w-[30%] lg:ml-0 ml-[10px]"
+                    src="images/WhatsApp Image 2022-10-15 at 19.14.32.jpeg" alt="" height="50%" width="70%">
+            </div>
+            <div class="flex flex-col mb-4 p-4 leading-normal mr-[20px]">
+                <h5 class=" lg:text-4xl text-md font-bold tracking-tight text-gray-900 ">Droidjam 2022</h5>
+                <p class="mb-3 font-normal lg:text-xl text-sm text-gray-500 ">Droidjam is an Adroid event, and have been held for every year. I learn a lot from this event, such as Shift-Left, Geofancing, Flutter, Bazel, and the environment in Tech Company</p>
+                <p class="text-blue-500 lg:text-md text-sm"><span><i class="fa-solid fa-medal" style="color: rgb(84, 84, 236);"></i></span>Benefits</p>
+                    <ul class="ml-6">
+                        <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>New Knowledge</li>
+                        <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>New Connection</li>
+                        <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>Desire to become a developer increases even more</li>
+                    </ul>
+            </div>
+        </div>
+        <div class="flex lg:flex-row flex-col lg:mt-[200px] mt-[100px] lg:ml-[100px]" data-aos="fade-up">
+            <div class="lg:w-[1000px] w-auto">
+                <img class="rounded-lg lg:w-[80%] w-[30%] lg:ml-0 ml-[10px]"
+                    src="images/WhatsApp Image 2022-11-29 at 10.24.41.jpeg" alt="" height="50%" width="80%">
+            </div>
+            <div class="flex flex-col mb-4 p-4 leading-normal ml-[10px] lg:ml-[100px]">
+                <h5 class=" lg:text-4xl text-md font-bold tracking-tight text-gray-900 ">IT Camp Trainer</h5>
+                <p class="mb-3 font-normal text-gray-500 lg:text-xl text-sm">I got selected to be a trainer in IT Camp event. IT Camp is an event with 50+ participants, I teach a new student in this school with zero experience of code. I teach them for 2 days, the material is website (HTML,CSS,Bootstrap), with a project.</p>
+                <p class="text-blue-500 lg:text-md text-sm"><span><i class="fa-solid fa-medal" style="color: rgb(84, 84, 236);"></i></span>Benefits</p>
+                <ul class="ml-6">
+                    <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>New Experiencee</li>
+                    <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>New Connection</li>
+                    <li class="text-blue-500 lg:text-md text-sm"><span class="mr-2"><i class="fa-solid fa-splotch" style="color:rgb(84, 84, 236) ;"></i></span>More understand material that we teach</li>
+                </ul>
+            </div>
+        </div>
+        </div>
+
+        <div class="mt-[400px]">
+            <h4 class="text-center font-bold text-4xl">Interested? Contact Me</h4>
+        </div>
+
+<form class="mx-10 mt-[100px] bg-slate-100 p-10 rounded-lg">
+    <div class="relative z-0 mb-6 w-1/2 group">
+        <input type="email" name="floating_email" id="floating_email" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+        <label for="floating_email" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Email address</label>
+    </div>
+    <div class="grid md:grid-cols-2 md:gap-6">
+      <div class="relative z-0 mb-6 w-full group">
+          <input type="text" name="floating_first_name" id="floating_first_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_first_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">First name</label>
+      </div>
+      <div class="relative z-0 mb-6 w-full group">
+          <input type="text" name="floating_last_name" id="floating_last_name" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_last_name" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Last name</label>
+      </div>
+    </div>
+    <div class="grid md:grid-cols-2 md:gap-6">
+      <div class="relative z-0 mb-6 w-full group">
+          <input type="tel" name="floating_phone" id="floating_phone" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_phone" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Phone number</label>
+      </div>
+      <div class="relative z-0 mb-6 w-full group">
+          <input type="text" name="floating_company" id="floating_company" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:text-white dark:border-gray-600 dark:focus:border-blue-500 focus:outline-none focus:ring-0 focus:border-blue-600 peer" placeholder=" " required />
+          <label for="floating_company" class="peer-focus:font-medium absolute text-sm text-gray-500 dark:text-gray-400 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-blue-600 peer-focus:dark:text-blue-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Company</label>
+      </div>
+    </div>
+    <button type="submit" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Submit</button>
+  </form>
+  
+            
+    </section> 
+
+<footer class="p-4 bg-white rounded-lg shadow md:px-6 md:py-8">
+    <div class="sm:flex sm:items-center sm:justify-between">
+        <a href="#home" class="flex items-center mb-4 sm:mb-0">
+            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Akmal Ranyan.</span>
+        </a>
+        <ul class="flex flex-wrap items-center mb-6 text-sm text-gray-500 sm:mb-0 dark:text-gray-400">
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6 ">About</a>
+            </li>
+            <li>
+                <a href="#" class="mr-4 hover:underline md:mr-6">Privacy Policy</a>
+            </li>
+        </ul>
+    </div>
+    <hr class="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
+    <span class="block text-sm text-gray-500 sm:text-center dark:text-gray-400">© 2022 <a href="#home" class="hover:underline">Akmal Ranyan.™</a>. All Rights Reserved.
+    </span>
+</footer>
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/flowbite@1.5.4/dist/flowbite.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>
